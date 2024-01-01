@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends</title>
+</head>
+<body>
+
+<h1>Friends</h1>
+
+<ul>
+    {% for x in myfriends %}
+        <li><a href="details_friends/{{ x.id }}">{{ x.name }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
