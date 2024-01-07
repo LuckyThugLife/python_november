@@ -69,3 +69,10 @@ def details_products(request, id):
     'myproducts': myproducts,
   }
   return HttpResponse(template.render(context, request))
+
+  return HttpResponse(template.render(context, request))
+
+
+def main(request):
+    template = loader.get_template('main.html')
+    return HttpResponse(template.render())

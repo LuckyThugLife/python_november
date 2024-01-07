@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Cities</title>
-</head>
-<body>
+{% extends "master.html" %}
+
+{% block title %}
+List of all Cities
+{% endblock %}
+
+{% block content %}
+
+<p><a href="/">HOME</a></p>
 
 <h1>Cities</h1>
-
 <ul>
-  {% for x in mycities %}
+    {% for x in mycities %}
     <li><a href="details_cities/{{ x.id }}">{{ x.name }}</a></li>
-  {% endfor %}
+    {% endfor %}
 </ul>
-
-</body>
-</html>
+{% endblock %}
