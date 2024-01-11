@@ -1,13 +1,13 @@
-
 {% extends "master.html" %}
 {% block title %}
-  Details about {{ mycities.name }}
+Details about {{ mycities.name }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ mycities.name }}</h1>
-<p>Description: {{ mycities.description }}</p>
-<p>Added date: {{ mycities.added_date }}</p>
+<div class="mycard">
+    <h1>{{ mycities.name }}</h1>
+    <p>Description: {{ mycities.description }}</p>
+    <p>Added date: {{ mycities.added_date }}</p>
 
-<p>Back to <a href="/cities">Cities</a></p>
+</div>
 {% endblock %}

@@ -1,20 +1,18 @@
 {% extends "master.html" %}
 
 
-
 {% block title %}
 List of all Cities
 {% endblock %}
 
 
 {% block content %}
-
-<p><a href="/">HOME</a></p>
-
-<h1>Cities</h1>
-<ul>
-    {% for x in mycities %}
-    <li><a href="details_cities/{{ x.id }}">{{ x.name }}</a></li>
-    {% endfor %}
-</ul>
+<div class="mycard">
+    <h1>Cities</h1>
+    <ul>
+        {% for x in mycities %}
+        <li onclick="window.location = 'details_cities/{{ x.id }}'">{{ x.name }}</li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}

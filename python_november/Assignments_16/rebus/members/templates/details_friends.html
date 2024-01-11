@@ -1,14 +1,14 @@
-
 {% extends "master.html" %}
 {% block title %}
-  Details about {{ myfriends.name }}
+Details about {{ myfriends.name }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ myfriends.name }}</h1>
-<p>Description: {{ myfriends.description }}</p>
-<p>Added date: {{ myfriends.added_date }}</p>
+<div class="mycard">
+    <h1>{{ myfriends.name }}</h1>
+    <p>Description: {{ myfriends.description }}</p>
+    <p>Added date: {{ myfriends.added_date }}</p>
 
-<p>Back to <a href="/friends">Friends</a></p>
+</div>
 {% endblock %}
 

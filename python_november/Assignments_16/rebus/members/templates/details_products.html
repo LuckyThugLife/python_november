@@ -1,13 +1,13 @@
-
 {% extends "master.html" %}
 {% block title %}
-  Details about {{ myproducts.name }}
+Details about {{ myproducts.name }}
 {% endblock %}
 
 {% block content %}
-<h1>{{ myproducts.name }}</h1>
-<p>Description: {{ myproducts.description }}</p>
-<p>Added date: {{ myproducts.added_date }}</p>
+<div class="mycard">
+    <h1>{{ myproducts.name }}</h1>
+    <p>Description: {{ myproducts.description }}</p>
+    <p>Added date: {{ myproducts.added_date }}</p>
 
-<p>Back to <a href="/products">Products</a></p>
+</div>
 {% endblock %}
