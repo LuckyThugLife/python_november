@@ -19,7 +19,7 @@ body {
 }
 .mycard {
   background-color: #f1f1f1;
-  background-image: linear-gradient(to bottom, red, #BBBEC4);
+  background-image: linear-gradient(to bottom, red, #3E3E3E);
   background-size: 100% 120px;
   background-repeat: no-repeat;
   margin: 40px auto;
@@ -40,7 +40,7 @@ ul {
 }
 li {
   background-color: #ffffff;
-  background-image: linear-gradient(to right, red, #BBBEC4);
+  background-image: linear-gradient(to right, red, #3E3E3E);
   background-size: 50px 60px;
   background-repeat: no-repeat;
   cursor: pointer;
